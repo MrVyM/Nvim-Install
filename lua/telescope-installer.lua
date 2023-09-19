@@ -25,7 +25,7 @@ require('telescope').setup{
       },
     },
     file_sorter =  require'telescope.sorters'.get_fuzzy_file,
-    file_ignore_patterns = {"./target", ".git/", ".cache", "%.o", "%.a", "%.out", "%.class",
+    file_ignore_patterns = {"./target", ".git/", ".cache", "%.o", "%.a", "%.out", "%.class", "%.d",
 		"%.pdf", "%.mkv", "%.mp4", "%.zip", "compile_commands.json"},
     generic_sorter =  require'telescope.sorters'.get_generic_fuzzy_sorter,
     winblend = 0,
