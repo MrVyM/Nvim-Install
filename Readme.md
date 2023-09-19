@@ -5,12 +5,11 @@ Le but de ce repo est d'installer cette config nvim en Salle Machine.
 ## How to Install
 
 ```
-git clone https://github.com/MrVyM/Nvim-Install-SM.git ~/.confs/
 cd ~/.confs
-mv install.sh install_backup.sh
-mv Nvim-Install-SM/install.sh .
 mkdir ~/.confs/config/nvim  -p
-cp Nvim-Install-SM/* config/nvim -rf
+git clone https://github.com/MrVyM/Nvim-Install-SM.git config/nvim 
+mv install.sh install_backup.sh
+cp config/nvim/install.sh .
 ./install.sh
 ```
 
