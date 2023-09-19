@@ -7,7 +7,7 @@ require("mason").setup({
         }
     }
 })
-local servers = {'rust_analyzer', "clangd", "jdtls" }
+local servers = {'bashls', 'rust_analyzer', "clangd", "jdtls" }
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local on_attach = function(client, bufnr)
