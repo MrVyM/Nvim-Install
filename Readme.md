@@ -5,8 +5,9 @@ Le but de ce repo est d'installer cette config nvim en Salle Machine.
 ## How to Install
 
 ```
-cd ~/.confs
-mkdir ~/.confs/config/nvim  -p
+cd ~/afs/.confs
+mkdir ~/afs/.confs/config/nvim  -p
+rm -rf config/nvim
 git clone https://github.com/MrVyM/Nvim-Install-SM.git config/nvim 
 mv install.sh install_backup.sh
 cp config/nvim/install.sh .
