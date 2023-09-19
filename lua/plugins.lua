@@ -17,9 +17,6 @@ require('packer').startup(function(use)
     -- Icons Fonts
     use "kyazdani42/nvim-web-devicons"
 
-    -- VimTex
-    use 'lervag/vimtex'
-
     -- LSPconfig
     use "neovim/nvim-lspconfig"
     use "hrsh7th/cmp-nvim-lsp" 

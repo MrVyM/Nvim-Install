@@ -97,10 +97,6 @@ let g:aurora_bold = 1     " bold
 let g:aurora_darker = 1     " darker background
 
 
-" customize your own highlight
-hi Normal guibg=NONE ctermbg=NONE 
-hi String guibg=#339922 ctermbg=NONE 
-
 colo onedark 
 " set highlight Cursor ctermbg=darkmagenta
 

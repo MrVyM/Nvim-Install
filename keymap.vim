@@ -5,6 +5,9 @@ source ~/.config/nvim/disable_keymap.vim
 nnoremap <A-o> <cmd>Telescope find_files<cr>
 nnoremap <A-f> <cmd>Telescope live_grep<cr>
 
+" Lspsaga 
+nnoremap ? :Lspsaga code_action<CR>
+
 " Keymap for todo
 nnoremap <A-c> :Telescope colorscheme<cr>
 nnoremap ft :TodoTelescope <cr>
