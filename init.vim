@@ -102,7 +102,7 @@ colo onedark
 
 " Press Tab for completion
 set wildmenu
-set completeopt=menuone,noselect
-set wildmode=list,full
+set completeopt=menu,menuone,noselect
+set wildmode=longest:full,list:full
 set wildignore=*.o,*.obj
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
