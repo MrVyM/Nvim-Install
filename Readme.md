@@ -5,7 +5,7 @@ Le but de ce repo est d'installer cette config nvim en Salle Machine.
 ## How to Install
 
 ```
-echo "export PATH=/run/current-system/sw/bin:$PATH" 
+echo "export PATH=/run/current-system/sw/bin:$PATH" >> ~/.bashrc
 cd ~/afs/.confs
 mkdir ~/afs/.confs/config/nvim  -p
 rm -rf config/nvim
