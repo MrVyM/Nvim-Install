@@ -4,15 +4,30 @@ Le but de ce repo est d'installer cette config nvim en Salle Machine.
 
 ## How to Install
 
-```
+### Dependencies 
+- Npm 
+- Python
+- Git
+### Pour la SM
+```bash
 echo "export PATH=/run/current-system/sw/bin:$PATH" >> ~/.bashrc
 cd ~/afs/.confs
 mkdir ~/afs/.confs/config/nvim  -p
-rm -rf config/nvim
+rm -rf config/nvim #will destroy your old config
 git clone https://github.com/MrVyM/Nvim-Install-SM.git config/nvim 
 mv install.sh install_backup.sh
 cp config/nvim/install.sh .
 ./install.sh
+```
+
+### Pour une distro classique 
+```bash
+mkdir ~/.config/nvim  -p
+rm -rf ~/.config/nvim # will destroy your old config
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone https://github.com/MrVyM/Nvim-Install-SM.git ~/.config/nvim 
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' 2> /dev/null &
 ```
 
 ### Explication
